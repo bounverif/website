@@ -1,0 +1,34 @@
+{
+  // Dev Container for Next.js website development
+  "name": "Next.js Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+
+  "mounts": [
+    "type=tmpfs,target=/tmp/${localWorkspaceFolderBasename}_node_modules"
+  ],
+
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    },
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true
+      },
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "unifiedjs.vscode-mdx"
+      ]
+    }
+  },
+
+  "forwardPorts": [3000],
+
+  "postCreateCommand": "/bin/sh -c 'rm -rf ./node_modules && ln -s /tmp/${localWorkspaceFolderBasename}_node_modules ./node_modules && npm install'"
+}
