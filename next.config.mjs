@@ -5,8 +5,9 @@ const nextConfig = {
   reactStrictMode: true,
   output: 'export',
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
-  basePath: `/website`,
-  assetPrefix: `/website/`,
+  // basePath: `/website`,
+  // assetPrefix: `/website/`,
+  images: { unoptimized: true },
 }
 
 const withMDX = createMDX({

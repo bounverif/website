@@ -137,18 +137,18 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            VevaLabs at Boğaziçi University is a research group dedicated to
-            advancing system verification and validation (V&V) for autonomous
-            and robotic systems led by{' '}
+            VevaLabs is a research group led by{' '}
             <a
               href="https://doganulus.github.io"
               className="font-semibold text-red-400 dark:text-red-400"
             >
               Doğan Ulus
-            </a>
-            . We focus on developing principled, scalable, and trustworthy
-            methods to ensure the correctness, safety, and resilience of complex
-            cyber-physical systems operating in real-world environments.
+            </a>{' '}
+            dedicated to advancing system verification and validation (V&V) for
+            autonomous and robotic systems. We focus on developing principled,
+            scalable, and trustworthy methods to ensure the correctness, safety,
+            and resilience of complex cyber-physical systems operating in
+            real-world environments.
           </p>
           <p className="text-zinc-600 dark:text-zinc-400">
             Our work bridges{' '}
